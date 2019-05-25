@@ -9,15 +9,12 @@ public class Tasks {
     oneXBet(2, 2, 4, 2);
     oneXBet(2, 2, 3, 3);
     oneXBet(2, 2, 1, 1);
-
   }
 
   public void testRhombusOfStar() {
-    System.out.println();
+
     rhombusOfStar(4);
-    System.out.println();
     rhombusOfStar(7);
-    System.out.println();
     rhombusOfStar(8);
   }
 
@@ -52,8 +49,8 @@ public class Tasks {
         System.out.print(" ");
         c++;
       }
-      stringBuilder.append(" *");
 
+      stringBuilder.append(" *");
       System.out.println(stringBuilder);
     }
     for (int k = maxCountOfStar - 1; k > 0; k--) {
@@ -67,6 +64,7 @@ public class Tasks {
       stringBuilder.deleteCharAt(stringBuilder.lastIndexOf("*"));
       System.out.println(stringBuilder);
     }
+    System.out.println();
   }
 
   private float mathOperations(int x, int degree) throws IllegalArgumentException {
