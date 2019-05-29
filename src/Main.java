@@ -4,14 +4,9 @@ public class Main {
     Tasks tasks = new Tasks();
     tasks.testOneXBet();
     System.out.println("Next:");
-    tasks.testMathOperations();
+    tasks.testMathCalculation();
     System.out.println("Next:");
-    tasks.testRhombusOfStar();
+    tasks.testDiamondOfStar();
   }
-
-
 }
-
-
-
 

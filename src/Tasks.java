@@ -11,19 +11,19 @@ public class Tasks {
     oneXBet(2, 2, 1, 1);
   }
 
-  public void testRhombusOfStar() {
+  public void testDiamondOfStar() {
 
-    rhombusOfStar(4);
-    rhombusOfStar(7);
-    rhombusOfStar(8);
+    diamondOfStar(4);
+    diamondOfStar(7);
+    diamondOfStar(8);
   }
 
-  public void testMathOperations() {
-    System.out.println("X в квадрате:" + mathOperations(2,2));
-    System.out.println("X в кубе:" + mathOperations(2,3));
-    System.out.println("X в степени N:" + mathOperations(4,5));
-    System.out.println("X в отрицательной степени N:" + mathOperations(2,-2));
-    System.out.println("-X в отрицательной степени N:" + mathOperations(-2,-3));
+  public void testMathCalculation() {
+    System.out.println("X в квадрате:" + mathCalculation(2,2));
+    System.out.println("X в кубе:" + mathCalculation(2,3));
+    System.out.println("X в степени N:" + mathCalculation(4,5));
+    System.out.println("X в отрицательной степени N:" + mathCalculation(2,-2));
+    System.out.println("-X в отрицательной степени N:" + mathCalculation(-2,-3));
   }
 
   private void oneXBet(int firstTeamResult, int secondTeamResult, int predictionOnTheFirstTeam, int predictionOnTheSecondTeam) {
@@ -38,10 +38,9 @@ public class Tasks {
     System.out.println(profit);
   }
 
-  private void rhombusOfStar(int maxCountOfStar) {
+  private void diamondOfStar(int maxCountOfStar) {
 
     StringBuilder stringBuilder = new StringBuilder("");
-
     for (int i = 0; i < maxCountOfStar; i++) {
       int c = 0;
       //Предупреждение! Сейчас будет твориться магия!)
@@ -67,27 +66,24 @@ public class Tasks {
     System.out.println();
   }
 
-  private float mathOperations(int x, int degree) throws IllegalArgumentException {
+  private float mathCalculation(int x, int power) throws IllegalArgumentException {
 
     float result = 1;
-    if (x == 0 && degree < 0) { throw new IllegalArgumentException("You probably tried to raise a zero to a negative degree."); }
+    if (x == 0 && power < 0) { throw new IllegalArgumentException("You probably tried to raise a zero to a negative power."); }
 
-    if (x == 0 && degree == 0) return 0;
+    if (x == 0 && power == 0) return 0;
 
-    if (degree < 0) {
-      for (int i = 1; i <= -degree; i++) {
+    if (power < 0) {
+      for (int i = 1; i <= -power; i++) {
         result *= x;
       }
 
       result = 1 / result;
     } else {
-      for (int i = 1; i <= degree; i++) {
+      for (int i = 1; i <= power; i++) {
         result *= x;
       }
     }
-
     return result;
   }
 }
-
-
