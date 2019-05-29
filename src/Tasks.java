@@ -27,7 +27,6 @@ public class Tasks {
   private void predictionOfMatchResult(int firstTeamResult, int secondTeamResult,
                                        int predictionOnTheFirstTeam, int predictionOnTheSecondTeam) {
     int profit = (predictionOnTheFirstTeam == firstTeamResult && predictionOnTheSecondTeam == secondTeamResult) ? 2 :
-
             (firstTeamResult > predictionOnTheFirstTeam && secondTeamResult > predictionOnTheSecondTeam) ||
                     (firstTeamResult < predictionOnTheFirstTeam && secondTeamResult < predictionOnTheSecondTeam) ||
                     (firstTeamResult == predictionOnTheFirstTeam && secondTeamResult == predictionOnTheSecondTeam) ? 1 : 0;
