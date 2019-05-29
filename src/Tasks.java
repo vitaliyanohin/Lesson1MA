@@ -1,7 +1,6 @@
 public class Tasks {
 
   public void testOneXBet() {
-
     oneXBet(2, 0, 2, 0);
     oneXBet(0, 2, 0, 3);
     oneXBet(2, 0, 2, 3);
@@ -12,7 +11,6 @@ public class Tasks {
   }
 
   public void testDiamondOfStar() {
-
     diamondOfStar(4);
     diamondOfStar(7);
     diamondOfStar(8);
@@ -39,7 +37,6 @@ public class Tasks {
   }
 
   private void diamondOfStar(int maxCountOfStar) {
-
     StringBuilder stringBuilder = new StringBuilder("");
     for (int i = 0; i < maxCountOfStar; i++) {
       int c = 0;
@@ -67,7 +64,6 @@ public class Tasks {
   }
 
   private float mathCalculation(int x, int power) throws IllegalArgumentException {
-
     float result = 1;
     if (x == 0 && power < 0) { throw new IllegalArgumentException("You probably tried to raise a zero to a negative power."); }
 
