@@ -64,11 +64,9 @@ public class Tasks {
     if (number == 0 && power < 0) {
       throw new IllegalArgumentException("You probably tried to raise a zero to a negative power.");
     }
-
     if (number == 0 && power == 0) {
       return 0;
     }
-
     if (power < 0) {
       for (int i = power; i < 0; i++) {
         result *= number;
