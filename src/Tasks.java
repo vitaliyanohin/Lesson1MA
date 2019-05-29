@@ -60,7 +60,6 @@ public class Tasks {
       stringBuilder.deleteCharAt(stringBuilder.lastIndexOf("*"));
       System.out.println(stringBuilder);
     }
-    System.out.println();
   }
 
   private float mathCalculation(int x, int power) throws IllegalArgumentException {
