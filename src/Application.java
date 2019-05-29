@@ -1,12 +1,11 @@
-public class Main {
+public class Application {
 
   public static void main(String[] args) {
     Tasks tasks = new Tasks();
-    tasks.testOneXBet();
+    tasks.testPredictionOfMatchResult();
     System.out.println("Next:");
     tasks.testMathCalculation();
     System.out.println("Next:");
     tasks.testDiamondOfStar();
   }
 }
-
